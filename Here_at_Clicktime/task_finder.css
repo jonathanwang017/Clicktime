@@ -18,6 +18,7 @@
 
 #task_table td, #task_table th {
   padding: 5px 20px;
+  text-align: left;
 }
 
 .-autocomplete-container {
