@@ -1,0 +1,42 @@
+<head>
+  <title>Here_at_Clicktime</title>
+</head>
+
+<body>
+  <div id="search_box">
+    <h3>Task Finder</h3>
+    {{> task_input}}
+    <button id="find_task">Find Tasks</button>
+  </div>
+  <div id="results_box">
+    <h3>Client Jobs</h3>
+  </div>
+  <table id="task_table">
+    <thead>
+      <tr>
+        <th>Client</th>
+        <th>Job</th>
+        <th>Client ID</th>
+        <th>Job ID</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each selectedJobs}}
+        <tr>
+          <td>{{ClientName}}</td>
+          <td>{{JobName}}</td>
+          <td>{{ClientID}}</td>
+          <td>{{JobID}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</body>
+
+<template name="task_input">
+  {{> inputAutocomplete settings=settings id="task_name" placeholder="Enter task name"}}
+</template>
+
+<template name="autocomplete">
+    <span class="label">{{Name}}</span>
+</template>

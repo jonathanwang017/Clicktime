@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coffee and Donuts</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="coffee_and_donuts.css" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATtrXw3l4XhICJY3cLlgA9yyRutaZyp4k&libraries=places"></script>
+    <script src="coffee_and_donuts.js"></script>
+  </head>
+  <body>
+    <div>
+      <h3>Coffee and Donuts</h3>
+      <select id="transportation">
+        <option value="WALKING">Walking</option>
+        <option value="BIKING">Biking</option>
+        <option value="TRANSIT">Public Transportation</option>
+      </select>
+      <button id="route" disabled>Find Route</button>
+    </div>
+    <div>
+      <div id="map"></div>
+      <div>
+        <h3>Directions</h3>
+        <table id="directions">
+        </table>
+      </div>
+    <div>
+  </body>
+</html>

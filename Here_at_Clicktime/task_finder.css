@@ -1,0 +1,25 @@
+#search_box {
+  padding: 0 20px 40px;
+}
+
+#find_task {
+  margin-left: 10px;
+  line-height: 20px;
+}
+
+#task_name {
+  width: 200px;
+  line-height: 20px;
+}
+
+#results_box {
+  padding: 0 20px;
+}
+
+#task_table td, #task_table th {
+  padding: 5px 20px;
+}
+
+.-autocomplete-container {
+  margin-top: 10px;
+}
